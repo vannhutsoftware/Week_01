@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 01</title>
+  </head>
+  <body>
+    <script>
+      // Test Data 1
+      const markMass1 = 78;
+      const markHeight1 = 1.69;
+      const johnMass1 = 92;
+      const johnHeight1 = 1.95;
+
+      // Tính BMI cho Data 1
+      const markBMI1 = markMass1 / markHeight1 ** 2;
+      const johnBMI1 = johnMass1 / johnHeight1 ** 2;
+      const markHigherBMI1 = markBMI1 > johnBMI1;
+
+      console.log("--- Data 1 ---");
+      console.log(`Mark's BMI: ${markBMI1}`);
+      console.log(`John's BMI: ${johnBMI1}`);
+      console.log(`Mark has higher BMI: ${markHigherBMI1}`);
+
+      // Test Data 2
+      const markMass2 = 95;
+      const markHeight2 = 1.88; 
+      const johnMass2 = 85; 
+      const johnHeight2 = 1.76; 
+
+      // Tính BMI cho Data 2
+      const markBMI2 = markMass2 / (markHeight2 * markHeight2);
+      const johnBMI2 = johnMass2 / (johnHeight2 * johnHeight2);
+      const markHigherBMI2 = markBMI2 > johnBMI2;
+
+      console.log("\n--- Data 2 ---");
+      console.log(`Mark's BMI: ${markBMI2}`);
+      console.log(`John's BMI: ${johnBMI2}`);
+      console.log(`Mark has higher BMI: ${markHigherBMI2}`);
+    </script>
+  </body>
+</html>
