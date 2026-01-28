@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 04</title>
+  </head>
+  <body>
+    <script>
+      // Function tính tip
+      const calcTip = function (bill) {
+        return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+      };
+
+      // Array bills
+      const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+      // Mảng trống để lưu trữ tips và totals
+      const tips = [];
+      const totals = [];
+
+      // Lặp qua mảng bills để tính tips và totals
+      for (let i = 0; i < bills.length; i++) {
+        const tip = calcTip(bills[i]);
+        tips.push(tip);
+        totals.push(bills[i] + tip);
+      }
+
+      console.log("Bills:", bills);
+      console.log("Tips:", tips);
+      console.log("Totals:", totals);
+
+      // Hàm tính trung bình cộng của một mảng
+      const calcAverage = function (arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+          sum += arr[i];
+        }
+        return sum / arr.length;
+      };
+
+      const averageTotal = calcAverage(totals);
+      console.log("\nAverage of totals:", averageTotal);
+    </script>
+  </body>
+</html>
