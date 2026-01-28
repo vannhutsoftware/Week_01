@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 02</title>
+  </head>
+  <body>
+    <script>
+      // Function tinh tip
+      const calcTip = (bill) => {
+        return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+      };
+
+      // Test function
+      console.log("Test function với bill = 100:");
+      console.log("Tip:", calcTip(100));
+
+      // Array bills
+      const bills = [125, 555, 44];
+
+      // Tính lần lượt các tip cho từng bill trong mảng
+      const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+      // Tỉnh tổng của mỗi bill và tip tương ứng
+      const total = [
+        bills[0] + tips[0],
+        bills[1] + tips[1],
+        bills[2] + tips[2],
+      ];
+
+      //Results
+      console.log("\nBills:", bills);
+      console.log("Tips:", tips);
+      console.log("Totals:", total);
+
+      //Chi tiết bill, tip và total
+      console.log("\nChi tiết từng bill:");
+      for (let i = 0; i < bills.length; i++) {
+        console.log(`Bill: ${bills[i]}, Tip: ${tips[i]}, Total: ${total[i]}`);
+      }
+    </script>
+  </body>
+</html>
