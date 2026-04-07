@@ -1,0 +1,36 @@
+.dong-ho {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.dong-ho h1 {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 36px;
+}
+
+.gio {
+  margin: 0;
+  font-size: 54px;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+.mo-ta {
+  margin: 0;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .dong-ho h1 {
+    font-size: 28px;
+  }
+
+  .gio {
+    font-size: 40px;
+  }
+}
