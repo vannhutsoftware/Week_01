@@ -1,0 +1,51 @@
+.page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 28px 16px 36px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 30px;
+}
+
+.status {
+  margin: 16px 0;
+  font-weight: 600;
+}
+
+.status.error {
+  color: #c62828;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid #d7dbe7;
+  border-radius: 12px;
+  padding: 14px;
+  background: #ffffff;
+}
+
+.card h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0;
+  color: #4f5d78;
+}
+
+@media (max-width: 760px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
